@@ -1,0 +1,46 @@
+/* Default Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+}
+#timer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20vmin;
+  user-select: none;
+  color: var(--font-color);
+  -webkit-text-stroke: 0.25vmin var(--font-shadow-color);
+}
+
+/* Timer Animation Styles */
+@keyframes time-timer-gradient {
+  0% { stroke: var(--gradient-color-100); stroke-dasharray: 31.42 31.42;}
+  25% { stroke: var(--gradient-color-75); stroke-dasharray: 23.565 31.42;} /* (1 - .25) * 31.42 */
+  50% { stroke: var(--gradient-color-50); stroke-dasharray: 15.71 31.42;} /* (1 - .5) * 31.42 */
+  75% { stroke: var(--gradient-color-25); stroke-dasharray: 7.855 31.42;} /* (1 - .75) * 31.42 */
+  100% { stroke: var(--gradient-color-0); stroke-dasharray: 0 31.42;}
+}
+
+@keyframes time-timer-solid {
+  0% { stroke: var(--color-solid); stroke-dasharray: 31.42 31.42;}
+  100% { stroke: var(--color-solid); stroke-dasharray: 0 31.42;}
+}
