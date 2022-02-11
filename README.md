@@ -1,9 +1,9 @@
-# Ryse Timer
+# Timer
 Use this timer to quickly show a countdown timer to people as part of a Zoom or other video conferencing meeting.
 
 
 # How to use
-Given this is a simple HTML webpage, it's pretty flexible in usage patterns. You can clone this repo and use it as a local file or you can try using the Git Pages version at https://pages.git.target.com/ryse/timer/ (go/timer)
+Given this is a simple HTML webpage, it's pretty flexible in usage patterns. You can clone this repo and use it as a local file or you can try using the Git Pages version at https://github.com/DavidTNguyen/timer
 
 ## Timer Configuration
 All configuration is done as either [URL parameters](https://support.google.com/google-ads/answer/6277564?hl=en#) or [localStorage](https://stackoverflow.com/a/9404841/14283439) with the former overriding the latter. Here are a list of the current supported parameters.
@@ -32,7 +32,7 @@ For Chrome, if you navigate to [Chrome Settings/Search Engines](chrome://setting
 
 **Example URL w/ Custom Params**
 ```
-file:///Users/z0018xr/GitHub/Enterprise/ryse/timer/index.html?color_font=rgba(255,255,255,0.8)&duration=%s
+file:///Users/DavidTNguyen/timer/index.html?color_font=rgba(255,255,255,0.8)&duration=%s
 ```
 
 ## As part of OBS
@@ -42,7 +42,7 @@ file:///Users/z0018xr/GitHub/Enterprise/ryse/timer/index.html?color_font=rgba(25
 **IMPORTANT - Leave the local option uncheck, otherwise querystring will be trimmed off**
 
 ```JavaScript
-file:///Users/Z07609/GitHub/ryse/timer/index.html?seconds=120&timeUpMessage=Let's Go
+file:///Users/DavidTNguyen/timer/index.html?seconds=120&timeUpMessage=Let's Go
 ```
 
 ![OBS Browser Source](images/obs-browser-source.png)
